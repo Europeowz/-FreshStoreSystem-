@@ -26,3 +26,6 @@ desktop.ini
 # Temp files
 main-sources.txt
 test-sources.txt
+
+# Local build dependencies
+lib/
