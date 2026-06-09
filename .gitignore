@@ -1,0 +1,28 @@
+# Build output
+target/
+*.class
+*.jar
+*.war
+
+# Database files (auto-generated)
+freshstore.db
+*.db
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Temp files
+main-sources.txt
+test-sources.txt
