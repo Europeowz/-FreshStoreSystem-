@@ -16,18 +16,34 @@ Java 24 + SQLite + Swing 桌面应用，专为中小型生鲜门店设计的进�
 
 ## 快速启动
 
+### 方式一：下载 JAR 直接运行（推荐）
+
+前往 [Releases](https://github.com/Europeowz/-FreshStoreSystem-/releases) 页面下载最新 `FreshStoreSystem.jar` 和 `start.bat`，放在同一目录。
+
+**Windows**：双击 `start.bat`
+
+**命令行**：
+```bash
+java --enable-preview --enable-native-access=ALL-UNNAMED -jar FreshStoreSystem.jar
+```
+
+### 方式二：从源码构建
+
+**前置条件**：JDK 24+、Maven 3.6+
+
+```bash
+git clone https://github.com/Europeowz/-FreshStoreSystem-.git
+cd FreshStoreSystem
+mvn package
+java --enable-preview --enable-native-access=ALL-UNNAMED -jar target/FreshStoreSystem.jar
+```
+
+Maven 会自动下载 SQLite、bcrypt、日志框架等依赖，无需手动配置。
+
 ### 前置条件
 
 - **JDK 24+**（需要 `--enable-preview` 和 `--enable-native-access`）
 - Windows / Linux / macOS
-
-### 启动方式
-
-**方式一：双击启动（Windows）**
-
-```
-双击 target\start.bat
-```
 
 **方式二：命令行**
 
